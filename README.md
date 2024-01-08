@@ -7,7 +7,7 @@ It is mainly used to beautify the comfyUI theme.<br>
 ![image-20240108115657371](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/92b4308e-0d86-4a68-8218-f962b894c65f)
 ![image-20240108115713934](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/08caa97a-9104-4032-ad79-b614dc163665)
 ![image-20240108115730640](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/defaf143-62c9-4228-922f-7dade41cf914)
-2.功能菜单优化
+2.功能菜单优化(Function menu optimization)
 
    2.1.调整了整体的UI界面：如字体、颜色、排版(Adjusted the overall UI interface: such as fonts, colors, and layout)
 

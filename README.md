@@ -32,4 +32,4 @@ It is mainly used to beautify the comfyUI theme.<br>
 
 
 **installation**<br>
-1.First, update to the latest version of [comfyui]:https://github.com/comfyanonymous/ComfyUI
+1.First, update to the latest version of <a  href ="[https://blog.csdn.net/u010725171](https://github.com/comfyanonymous/ComfyUI)https://github.com/comfyanonymous/ComfyUI">ComfyUI</a><br>

@@ -1,5 +1,5 @@
 # comfyui-Thoth-theme
-It is mainly used to beautify the comfyUI theme.
+It is mainly used to beautify the comfyUI theme.<br>
 功能：
 
 1.整体界面优化

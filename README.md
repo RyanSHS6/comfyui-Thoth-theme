@@ -35,3 +35,9 @@ It is mainly used to beautify the comfyUI theme.<br>
 1.update to the latest version of [Comfyui](https://github.com/comfyanonymous/ComfyUI);<br>
 2.You must install these two plugins，[ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use)、[comfyui-workspace-manager](https://github.com/11cafe/comfyui-workspace-manager);<br>
 3.Download the zip file and copy all the contents in the folder to ‘./comfyui/web’, replacing all files (please back up the ‘web’ folder first).
+
+
+**Note**<br>
+1.I'm using Chrome and the zoom is 67%, so you may need to zoom too (will adjust later)；
+2.There are several functions that are not yet complete and have not been completed. If necessary, you can give us your suggestions；
+3.If possible, please sponsor the author to organize it more completely. The contact information is in the ‘last icon of multi-function’。

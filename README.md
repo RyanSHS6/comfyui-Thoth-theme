@@ -1,4 +1,4 @@
-![image-20240108120019293](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/5d8f5195-fa9e-4064-917c-81077217a256)# comfyui-Thoth-theme
+# comfyui-Thoth-theme
 It is mainly used to beautify the comfyUI theme.
 功能：
 

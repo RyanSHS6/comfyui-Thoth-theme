@@ -37,6 +37,12 @@ It is mainly used to beautify the comfyUI theme.<br>
 3.Download the zip file and copy all the contents in the folder to ‘./comfyui/web’, replacing all files (please back up the ‘web’ folder first).<br>
 4.Open comfyui, import the theme **'Thoth.json'** in the settings panel, and refresh the web page multiple times.
 
+安装
+1、更新comfyui到最新版本；
+2、你必须安装ComfyUI-Easy-Use、comfyui-workspace-manager两个插件；
+3、下载release包然后到./comfyui/web，替换所有内容（建议备份一份原始的web文件夹);
+4、打开comfyui，到设置面板导入’Thoth.json‘,F5刷新网页几次即可使用。
+
 
 **Note**<br>
 1.I'm using Chrome and the zoom is **67%**, so you may need to zoom too (will adjust later)；<br>

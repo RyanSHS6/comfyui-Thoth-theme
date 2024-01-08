@@ -38,6 +38,9 @@ It is mainly used to beautify the comfyUI theme.<br>
 
 
 **Note**<br>
-1.I'm using Chrome and the zoom is 67%, so you may need to zoom too (will adjust later)；<br>
+1.I'm using Chrome and the zoom is **67%**, so you may need to zoom too (will adjust later)；<br>
+
 2.There are several functions that are not yet complete and have not been completed. If necessary, you can give us your suggestions；<br>
+
 3.If possible, please sponsor the author to organize it more completely. The contact information is in the ‘last icon of multi-function’。<br>
+

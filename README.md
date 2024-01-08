@@ -18,8 +18,8 @@ It is mainly used to beautify the comfyUI theme.<br>
 ​       2.3、Small gif animation: used to shorten the menu to save space (click the dynamic character button);<br>
 ![image-20240108120008574](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/bbd9d986-6bef-41f9-8077-04bc303c7c1b)![image-20240108120019293](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/365e83b7-3aa7-4ece-8d58-b09261efe351)
 <br>
-       2.4、Commonly used website navigation icons: Civitai, LibLib, TusiAI, Github, HuggingFace, Youtube;<br>
-   ![image](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/3a55687a-5835-44e1-8e51-36aa38b8c41d)
+       2.4、Commonly used website navigation icons: Civitai, LibLib, TusiAI, Github, HuggingFace, Youtube;
+   ![image](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/3a55687a-5835-44e1-8e51-36aa38b8c41d)<br>
 ​       2.5、Side bar sticking: used to further utilize space (mouse over to display!);
 ![image-20240108120420070](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/4a186f40-7102-48f5-ae48-9381ddcdf161)
 ![image-20240108120458180](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/8ad32567-2a78-4672-8044-d400ef4fe2c1)

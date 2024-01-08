@@ -12,9 +12,9 @@ It is mainly used to beautify the comfyUI theme.<br>
    1、Adjusted the overall UI interface: such as fonts, colors, and layout：<br>
    2、Added some common functions：<br>
 ​       2.1、Refresh the web page;
-![image](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/b26b929e-d47d-4340-ad1c-950bca40b47c)
+![image](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/b26b929e-d47d-4340-ad1c-950bca40b47c)<br>
 ​       2.2、Dynamic neon: a more visible sign;
-![image](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/5150b0f9-9390-4d8b-8667-892a46058c36)
+![image](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/5150b0f9-9390-4d8b-8667-892a46058c36)<br>
 ​       2.3、Small gif animation: used to shorten the menu to save space (click the dynamic character button);<br>
 ![image-20240108120008574](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/bbd9d986-6bef-41f9-8077-04bc303c7c1b)![image-20240108120019293](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/365e83b7-3aa7-4ece-8d58-b09261efe351)
 <br>

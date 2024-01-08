@@ -28,3 +28,8 @@ It is mainly used to beautify the comfyUI theme.<br>
    (1)、Full screen: Maximizes browser space:![image-20240108120643744](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9c66973a-a42f-4535-87a5-7b6f2cb6d1c3)<br>
    (2)、Video: Enter the URL to embed the video in the comfyUI interface without frequent switching:![image-20240108120714203](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/cb1ddea5-2e89-49de-93ab-0b8287d9bb82)<br>
    (3)、Still under development: to be improved:![image-20240108120905667](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9ad659ac-4e20-41f4-ba7a-08875349eaec)<br>
+
+
+
+**installation**<br>
+1.First, update to the latest version of [comfyui]:https://github.com/comfyanonymous/ComfyUI

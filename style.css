@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+:root {
+	--fg-color: #000;
+	--bg-color: #fff;
+	--comfy-menu-bg: #353535;
+	--comfy-input-bg: #222;
+	--input-text: #ddd;
+	--descrip-text: #999;
+	--drag-text: #ccc;
+	--error-text: #ff4444;
+	--border-color: #4e4e4e;
+	--tr-even-bg-color: #222;
+	--tr-odd-bg-color: #353535;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fg-color: #fff;
+		--bg-color: #202020;
+	}
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	background-color: var(--bg-color);
+	color: var(--fg-color);
+}
+
+#graph-canvas {
+	width: 100%;
+	height: 100%;
+}
+
+.comfy-multiline-input {
+	background-color: var(--comfy-input-bg);
+	color: var(--input-text);
+	overflow: hidden;
+	overflow-y: auto;
+	padding: 2px;
+	resize: none;
+	border: none;
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+.comfy-modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 100; /* Sit on top */
+	padding: 30px 30px 10px 30px;
+	background-color: var(--comfy-menu-bg); /* Modal background */
+	color: var(--error-text);
+	box-shadow: 0 0 20px #888888;
+	border-radius: 10px;
+	top: 50%;
+	left: 50%;
+	max-width: 80vw;
+	max-height: 90vh;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	justify-content: center;
+	font-family: inter,monospace !important;
+	font-size: 15px;
+}
+
+.comfy-modal-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.comfy-modal p {
+	overflow: auto;
+	white-space: pre-line; /* This will respect line breaks */
+	margin-bottom: 20px; /* Add some margin between the text and the close button*/
+}
+
+.comfy-modal select,
+.comfy-modal input[type=button],
+.comfy-modal input[type=checkbox] {
+	margin: 3px 3px 3px 4px;
+}
+
+.comfy-menu {
+	font-family: inter,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+	font-size: 16px;
+	font-weight: 500 !important;
+	/* font-size: 10px !important; */
+	position: absolute;
+	top: 15%;
+	right: 0;
+	text-align: center;
+	z-index: 999;
+	/* width: 170px; */
+	width: 230px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* color: var(--descrip-text); */
+	color: var(--input-text);
+	background-color: var(--comfy-menu-bg);
+	padding: 10px;
+	border-radius: 0 8px 8px 8px;
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+	user-select: none !important;
+}
+
+
+
+/* 自己添加收缩样式 */
+.comfy-menu .expand {
+	position: absolute;
+	width: 40px;
+	height: 60px;
+	left:-40px ;
+	border-radius: 8px 0 0 8px !important;
+	top: 45%;
+	z-index: 997;
+	opacity: 0;
+	background-color: var(--comfy-menu-bg);
+	color: #ff4444;
+	
+}
+.comfy-menu .expand p {
+	font-size: 20px;
+}
+.comfy-menu .expand:hover {
+	opacity: 1;
+}
+
+.comfy-menu .multifuction ul,
+.comfy-menu .multifuction li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comfy-menu .multifuction {
+
+	position: absolute;
+	width:40px ;
+	height: 200px;
+	left: -40px;
+	top: 55%;
+	z-index: 994;
+	background-color: blue;
+	border-radius: 8px 0 0 8px !important;
+	background-color: var(--comfy-menu-bg);
+	padding-top: 8px;
+	border: 1px solid var(--border-color);;
+	opacity: 0;
+}
+
+.comfy-menu .multifuction ul {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+	height: 100%;
+
+}
+.comfy-menu .multifuction ul li {
+  cursor: pointer;
+  /* background-color: #fff; */
+}
+.comfy-menu .multifuction ul li i {
+	font-size: 22px !important;
+	color: rgb(91, 115, 250);
+}
+
+.comfy-menu .multifuction:hover {
+	opacity: 1;
+}
+.comfy-menu .multifuction ul li:hover {
+	filter: brightness(1.6);
+}
+.comfy-menu .multifuction ul li:hover  i{
+	color: rgb(241, 116, 58);
+	scale: 1.2;
+}
+.comfy-menu .reload {
+	background:linear-gradient(to right,rgb(247, 112, 94),rgb(20, 20, 20))
+}
+
+.comfy-menu .website {
+	width: 100%;
+	height: 40px;
+	background-color:var(--comfy-menu-bg);
+	border-radius: 8px;
+	display: flex;
+	flex-wrap: wrap;
+	background:linear-gradient(to right,rgba(61, 88, 243, 0.281),rgba(209, 94, 28, 0.247));
+	border: 1px solid var(--border-color);
+	justify-content: space-around;
+	padding-top: 3px;
+}
+.comfy-menu .website a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;	
+	
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.418);
+}
+.comfy-menu .website a img {
+	width: 100%;
+	display: block;
+	padding-top: 2px;
+	object-fit: cover;
+	cursor: pointer;
+
+	
+}
+.comfy-menu .pictureInPicture {
+	width: 480px;
+	height: 480px;
+	position: absolute;
+	left: -480px;
+	/* background-color: orange; */
+	border-radius: 8px;
+	overflow: hidden;
+}
+.comfy-menu .pictureInPicture img {
+	width: 100%;
+	height: 80%;
+}
+.comfy-menu .switchShape {
+	width: 100%;
+	height: 50px;
+	border-radius: 8px;
+	background-image:url(giphy.gif);
+	background-position: center; 
+    background-repeat: no-repeat; 
+	background-size: 100%;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+.comfy-menu .switchShape::after {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	width: 101%;
+	height: 100%;
+	top: 0;
+	left: -1px;
+	background: linear-gradient(135deg,rgba(247, 56, 56, 0.534),rgba(255, 106, 37, 0.712),rgba(8, 218, 200, 0.938),rgba(67, 109, 248, 0.849),rgba(12, 97, 255, 0.918),rgba(78, 146, 248, 0.712),rgba(247, 56, 56, 0.534));	
+	animation: moveAnimate 2s ease-in-out infinite;
+	background-repeat: repeat no-repeat;
+	background-size: 900% 300%;
+	opacity: 0.4;
+	
+}
+
+@keyframes moveAnimate {
+	0% {
+		background-position: -500px 50%;
+	}
+	50% {
+		background-position: 500px 50%;
+	}
+	100% {
+		background-position: -500px 50%;
+	}
+}
+	
+.comfy-menu .playVideoShow {
+	position: absolute;
+	left: -1167%;
+	top: -98%;
+	border-radius: 8px !important;
+	overflow: hidden;
+	resize: both;
+}
+.comfy-menu .playVideoShow iframe{
+	width: 100%;
+	height: 100%;
+	/* height: 100%; */
+}
+
+
+
+.comfy-menu.activate > button:not(.comfy-queue-btn):not(.switchShape):not(.reload):not(#comfy-load-default-button):not(#comfy-clear-button) {
+	display: none;
+}
+
+
+/* 新添加的一直到这里 */
+.comfy-menu button,
+.comfy-modal button {
+	font-size: 16px !important;
+	opacity: 0.9;
+}
+
+.comfy-menu-btns {
+	display: flex;
+	margin-bottom: 0px !important;
+	width: 100%;
+	justify-content: space-between;
+}
+.comfy-menu #comfyui-browser-button,
+.comfy-menu #comfyui-browser-collect-button {
+	margin-bottom: 0px !important;
+	padding: 0 !important;
+}
+.comfy-menu-btns button {
+	font-size: 10px !important;
+	font-weight: 700;
+	width: 33%;
+	color: var(--descrip-text) !important;
+	padding: 0 !important;
+}
+.comfy-menu-btns #clipbord-copy-button {
+	width: 48%;
+	margin-bottom: 4px !important;
+}
+.comfy-menu-btns #clipbord-paste-button {
+	width: 48%;
+	margin-bottom: 4px !important;
+}
+.comfy-menu > button:not(.comfy-menu-btns):not(.drag-handle):not(.comfy-queue-btn):not(#extraOptions) {
+	font-size: 14px !important;
+	padding: 2px;
+	margin: 4px auto;
+}
+.comfy-menu  >button.sharebtn {
+	justify-content: space-between;
+	padding-left: 50px !important;
+	
+	
+}
+
+.comfy-menu >hr {
+	width: 100%;
+	height: 0px;
+	margin: 2px 0 !important;
+}
+.comfy-menu > button {
+	width: 100%;
+	font-weight: 700 !important;
+}
+
+.comfy-menu > button,
+.comfy-menu-btns button,
+.comfy-menu .comfy-list button,
+.comfy-modal button {
+	color: var(--input-text);
+	background-color: var(--comfy-input-bg);
+	border-radius: 8px;
+	border-color: var(--border-color);
+	border-style: solid;
+	margin-top: 2px;
+}
+
+.comfy-menu > button:hover,
+.comfy-menu-btns button:hover,
+.comfy-menu .comfy-list button:hover,
+.comfy-modal button:hover,
+.comfy-settings-btn:hover {
+	filter: brightness(1.4);
+	cursor: pointer;
+}
+
+.comfy-menu span.drag-handle {
+	width: 10px;
+	height: 40px;
+	display: inline-block;
+	overflow: hidden;
+	line-height: 5px;
+	padding: 3px 4px;
+	cursor: move;
+	vertical-align: middle;
+	margin-top: -.4em;
+	margin-left: -.2em;
+	font-size: 12px;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	color: var(--drag-text);
+	text-shadow: 1px 0 1px black;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.comfy-menu span.drag-handle::after {
+	content: '.. .. ..';
+}
+
+.comfy-queue-btn {
+	width: 100%;
+	background: linear-gradient(135deg,rgba(247, 56, 56, 0.534),rgba(78, 146, 248, 0.712),rgba(255, 150, 29, 0.938),rgba(255, 255, 255, 0.849),rgba(12, 97, 255, 0.918),rgba(78, 146, 248, 0.712),rgba(247, 56, 56, 0.534));	
+	animation: moveAnimate 2s ease-in-out infinite;
+	background-repeat: repeat no-repeat;
+	background-size: 900% 300%;
+	font-weight: 900;
+	font-size: 22px !important;
+	padding: 1px;
+}
+
+.comfy-list {
+	color: var(--descrip-text);
+	background-color: var(--comfy-menu-bg);
+	margin-bottom: 10px;
+	border-color: var(--border-color);
+	border-style: solid;
+	border-radius: 8px;
+	width: 100%;
+}
+
+.comfy-list-items {
+	overflow-y: scroll;
+	max-height: 100px;
+	min-height: 25px;
+	background-color: var(--comfy-input-bg);
+	padding: 5px;
+	width: 96%;
+	margin: auto;
+}
+
+.comfy-list h4 {
+	min-width: 160px;
+	margin: 0;
+	padding: 2px;
+	font-weight: normal;
+}
+
+.comfy-list-items button {
+	font-size: 8px;
+}
+
+.comfy-list-actions {
+	margin: 5px;
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+}
+
+.comfy-list-actions button {
+	font-size: 12px !important;
+	width: 50%;
+	background-color: blueviolet !important;
+}
+
+button.comfy-settings-btn {
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 16px !important;
+	padding: 0px;
+	position: absolute;
+	text-align: center;
+	margin: 0px auto;
+	right: 0;
+	line-height: 16px;
+}
+
+button.comfy-queue-btn {
+	margin: 6px 0 !important;
+}
+
+.comfy-modal.comfy-settings,
+.comfy-modal.comfy-manage-templates {
+	text-align: center;
+	font-family: sans-serif;
+	color: var(--descrip-text);
+	z-index: 99;
+}
+
+.comfy-modal.comfy-settings input[type="range"] {
+	vertical-align: middle;
+}
+
+.comfy-modal.comfy-settings input[type="range"] + input[type="number"] {
+	width: 3.5em;
+}
+
+.comfy-modal input,
+.comfy-modal select {
+	color: var(--input-text);
+	background-color: var(--comfy-input-bg);
+	border-radius: 8px;
+	border-color: var(--border-color);
+	border-style: solid;
+	font-size: inherit;
+}
+
+.comfy-tooltip-indicator {
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+
+@media only screen and (max-height: 850px) {
+	.comfy-menu {
+		top: 0 !important;
+		bottom: 0 !important;
+		left: auto !important;
+		right: 0 !important;
+		border-radius: 0;
+	}
+
+	.comfy-menu span.drag-handle {
+		visibility: hidden
+	}
+}
+
+/* Input popup */
+
+.graphdialog {
+	min-height: 1em;
+	background-color: var(--comfy-menu-bg);
+}
+
+.graphdialog .name {
+	font-size: 14px;
+	font-family: sans-serif;
+	color: var(--descrip-text);
+}
+
+.graphdialog button {
+	margin-top: unset;
+	vertical-align: unset;
+	height: 1.6em;
+	padding-right: 8px;
+}
+
+.graphdialog input, .graphdialog textarea, .graphdialog select {
+	background-color: var(--comfy-input-bg);
+	border: 2px solid;
+	border-color: var(--border-color);
+	color: var(--input-text);
+	border-radius: 12px 0 0 12px;
+}
+
+/* Dialogs */
+
+dialog {
+	box-shadow: 0 0 20px #888888;
+}
+
+dialog::backdrop {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#comfy-settings-dialog {
+	padding: 0;
+	width: 50rem;
+	max-height: 40rem;
+	border-radius: 12px;
+	overflow: auto;
+	font-family: inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	border: 1px solid var(--border-color);
+	background-color: var(--comfy-menu-bg);	
+	opacity: 0.8;
+	backdrop-filter: blur(16px) brightness(120%);
+	font-weight: 7010;
+	opacity: 0.9;
+}
+
+#comfy-settings-dialog tr > td:first-child {
+	text-align: left;
+	width: 60%;
+}
+
+#comfy-settings-dialog button {
+	background-color: var(--bg-color);
+	border: 1px var(--border-color) solid;
+	border-radius: 0;
+	color: var(--input-text);
+	font-size: 1rem;
+	padding: 0.5rem;
+}
+
+#comfy-settings-dialog button:hover {
+	background-color: var(--tr-odd-bg-color);
+}
+
+/* General CSS for tables */
+
+.comfy-table {
+	border-collapse: collapse;
+	color: var(--input-text);
+	font-family:inter, Arial, sans-serif;
+	width: 100%;
+}
+
+.comfy-table caption {
+	background-color: var(--bg-color);
+	color: var(--input-text);
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 8px;
+	text-align: center;
+}
+
+.comfy-table tr:nth-child(even) {
+	background-color: var(--tr-even-bg-color);
+}
+
+.comfy-table tr:nth-child(odd) {
+	background-color: var(--tr-odd-bg-color);
+}
+
+.comfy-table td,
+.comfy-table th {
+	border: 1px solid var(--border-color);
+	padding: 8px;
+}
+
+/* Context menu */
+
+.litegraph .dialog {
+	z-index: 1;
+	font-family: Arial, sans-serif;
+}
+
+.litegraph .litemenu-entry.has_submenu {
+	position: relative;
+	padding-right: 20px;
+}
+
+.litemenu-entry.has_submenu::after {
+	content: ">";
+	position: absolute;
+	top: 0;
+	right: 2px;
+}
+
+.litegraph.litecontextmenu,
+.litegraph.litecontextmenu.dark {
+	z-index: 9999 !important;
+	background-color: var(--comfy-menu-bg) !important;
+	filter: brightness(95%);
+}
+
+.litegraph.litecontextmenu .litemenu-entry:hover:not(.disabled):not(.separator) {
+	background-color: var(--comfy-menu-bg) !important;
+	filter: brightness(155%);
+	color: var(--input-text);
+}
+
+.litegraph.litecontextmenu .litemenu-entry.submenu,
+.litegraph.litecontextmenu.dark .litemenu-entry.submenu {
+	background-color: var(--comfy-menu-bg) !important;
+	color: var(--input-text);
+}
+
+.litegraph.litecontextmenu input {
+	background-color: var(--comfy-input-bg) !important;
+	color: var(--input-text) !important;
+}
+
+.comfy-context-menu-filter {
+	box-sizing: border-box;
+	border: 1px solid #999;
+	margin: 0 0 5px 5px;
+	width: calc(100% - 10px);
+}
+
+.comfy-img-preview {
+	pointer-events: none;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+ 	align-content: flex-start;
+	justify-content: center;
+}
+
+.comfy-img-preview img {
+	object-fit: contain;
+	width: var(--comfy-img-preview-width);
+	height: var(--comfy-img-preview-height);
+}
+
+.comfy-missing-nodes li button {
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+/* Search box */
+
+.litegraph.litesearchbox {
+	z-index: 9999 !important;
+	background-color: var(--comfy-menu-bg) !important;
+	overflow: hidden;
+	display: block;
+}
+
+.litegraph.litesearchbox input,
+.litegraph.litesearchbox select {
+	background-color: var(--comfy-input-bg) !important;
+	color: var(--input-text);
+}
+
+.litegraph.lite-search-item {
+	color: var(--input-text);
+	background-color: var(--comfy-input-bg);
+	filter: brightness(80%);
+	padding-left: 0.2em;
+}
+
+.litegraph.lite-search-item.generic_type {
+	color: var(--input-text);
+	filter: brightness(50%);
+}
+
+/* 一些插件的样式 comfyui-manager */
+#cm-manager-dialog {
+	font-size: 18px !important;
+	height: 560px !important;
+	width: 1000px !important;
+}
+#cm-manager-dialog  .comfy-modal-content #cm-close-button {
+	bottom: 2px !important;
+}
+#cm-manager-dialog .comfy-modal-content .cm-title {
+	font-size: 24px !important;
+}
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(1) select {
+	font-size: 16px !important;
+	padding: 4px;
+	margin: 4px auto;
+}
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(1)  .cm-button,
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(1) .cm-experimental {
+	margin-top: -15px !important;
+}
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(1) .cm-experimental-button {
+	margin: 6px auto !important;
+	padding: 1px auto !important;
+	text-align: center;
+	line-height: 18px;
+}
+/* 第二列 */
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(2) .cm-button:nth-child(5),
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(2) .cm-button:nth-child(6),
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(2) .cm-button:nth-child(7) {
+	background-image: linear-gradient(to right , #4d89f741, rgba(245, 85, 36, 0.281));
+	padding: 3px 0px !important;
+	color: white !important;
+	font-weight: 900 !important;
+
+}
+
+/* 第三列 */
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(3) .cm-notice-board {
+	height: 300px;
+}
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(3) .cm-notice-board  p {
+	margin-bottom: 3px;
+}
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(3) .cm-notice-board  p:nth-child(2) {
+	font-weight: 400 !important;
+}
+#cm-manager-dialog .comfy-modal-content .cm-menu-column:nth-child(3) .cm-notice-board  ul li {
+	font-size: 14px !important;
+	font-weight: 500 !important;
+}

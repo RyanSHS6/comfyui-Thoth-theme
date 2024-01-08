@@ -14,20 +14,29 @@ It is mainly used to beautify the comfyUI theme.<br>
    2.2.添加了一些常用功能
 
 ​       2.2.1  Reload：重新刷新网页
+![image](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/b26b929e-d47d-4340-ad1c-950bca40b47c)
 
-​       2.2.2  动态霓虹灯：更显著的标识<br>
+
+​       2.2.2  动态霓虹灯：更显著的标识
+![image](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/5150b0f9-9390-4d8b-8667-892a46058c36)
+
 
 ​       2.2.3  gif小动画：用于缩短菜单节省空间(点击动态人物按钮)<br>
 ![image-20240108120008574](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/bbd9d986-6bef-41f9-8077-04bc303c7c1b)![image-20240108120019293](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/365e83b7-3aa7-4ece-8d58-b09261efe351)
 
-   2.2.4  常用网站导航图标：C站、哩布哩布、吐司、Github、HuggingFace、Youtube
+      2.2.4  常用网站导航图标：C站、哩布哩布、吐司、Github、HuggingFace、Youtube
+   ![image](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/3a55687a-5835-44e1-8e51-36aa38b8c41d)
 
-​       2.2.5  侧标栏贴靠：用于进一步利用空间（鼠标放上去显示！）
+
+​      2.2.5  侧标栏贴靠：用于进一步利用空间（鼠标放上去显示！）
 ![image-20240108120420070](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/4a186f40-7102-48f5-ae48-9381ddcdf161)
 ![image-20240108120458180](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/8ad32567-2a78-4672-8044-d400ef4fe2c1)
  2.2.6  多功能侧边栏：目前只有2个功能，（剩余的还在思考中！欢迎大家提供想法）
 ![image-20240108120528795](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/0c61a45c-609f-4a86-9452-10cdd35bff9b)
 
-(1)、全屏![image-20240108120643744](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9c66973a-a42f-4535-87a5-7b6f2cb6d1c3)：最大化浏览器空间<br>
-(2)、视频![image-20240108120714203](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/cb1ddea5-2e89-49de-93ab-0b8287d9bb82)：输入视频连接可以嵌入视频在comfyUI界面，一边教学一边自己搭建，不用频繁切换<br>
-(3)、还在开发当中![image-20240108120905667](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9ad659ac-4e20-41f4-ba7a-08875349eaec)：待完善<br>
+(1)、全屏：最大化浏览器空间<br>
+![image-20240108120643744](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9c66973a-a42f-4535-87a5-7b6f2cb6d1c3)
+(2)、视频：输入视频连接可以嵌入视频在comfyUI界面，一边教学一边自己搭建，不用频繁切换<br>
+![image-20240108120714203](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/cb1ddea5-2e89-49de-93ab-0b8287d9bb82)
+(3)、还在开发当中：待完善<br>
+![image-20240108120905667](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9ad659ac-4e20-41f4-ba7a-08875349eaec)

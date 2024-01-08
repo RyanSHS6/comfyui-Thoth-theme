@@ -30,6 +30,6 @@ It is mainly used to beautify the comfyUI theme.<br>
  2.2.6  多功能侧边栏：目前只有2个功能，（剩余的还在思考中！欢迎大家提供想法）
 ![image-20240108120528795](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/0c61a45c-609f-4a86-9452-10cdd35bff9b)
 
-(1)、全屏![image-20240108120643744](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9c66973a-a42f-4535-87a5-7b6f2cb6d1c3)：最大化浏览器空间
-(2)、视频![image-20240108120714203](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/cb1ddea5-2e89-49de-93ab-0b8287d9bb82)：输入视频连接可以嵌入视频在comfyUI界面，一边教学一边自己搭建，不用频繁切换
-(3)、还在开发当中![image-20240108120905667](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9ad659ac-4e20-41f4-ba7a-08875349eaec)：待完善
+(1)、全屏![image-20240108120643744](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9c66973a-a42f-4535-87a5-7b6f2cb6d1c3)：最大化浏览器空间<br>
+(2)、视频![image-20240108120714203](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/cb1ddea5-2e89-49de-93ab-0b8287d9bb82)：输入视频连接可以嵌入视频在comfyUI界面，一边教学一边自己搭建，不用频繁切换<br>
+(3)、还在开发当中![image-20240108120905667](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/9ad659ac-4e20-41f4-ba7a-08875349eaec)：待完善<br>

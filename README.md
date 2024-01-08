@@ -31,7 +31,7 @@ It is mainly used to beautify the comfyUI theme.<br>
 
 
 
-**installation**<br>
+**Installation**<br>
 1.update to the latest version of [Comfyui](https://github.com/comfyanonymous/ComfyUI);<br>
 2.You must install these two plugins!!![ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use)、[comfyui-workspace-manager](https://github.com/11cafe/comfyui-workspace-manager);<br>
 3.Download the file and copy and replace the corresponding folder (you'd better back up the corresponding folder!)

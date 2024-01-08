@@ -17,10 +17,8 @@ It is mainly used to beautify the comfyUI theme.<br>
 
 ​       2.2.2  动态霓虹灯：更显著的标识<br>
 
-​       2.2.3  gif小动画：用于缩短菜单节省空间
+​       2.2.3  gif小动画：用于缩短菜单节省空间<br>
 ![image-20240108120008574](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/bbd9d986-6bef-41f9-8077-04bc303c7c1b)![image-20240108120019293](https://github.com/RyanSHS6/comfyui-Thoth-theme/assets/118988972/365e83b7-3aa7-4ece-8d58-b09261efe351)
-<br>
-
 
    2.2.4  常用网站导航图标：C站、哩布哩布、吐司、Github、HuggingFace、Youtube
 
